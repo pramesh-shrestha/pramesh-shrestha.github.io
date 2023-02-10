@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" rel="stylesheet">
+    <title>Shrestha's Portfolio</title>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li class="control">
+                        <a href="#header"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="control">
+                        <a href="#about"><i class="fa fa-user" aria-hidden="true"></i></a><br>
+                    </li>
+                    <li class="control">
+                        <a href="#portfolio"> <i class="fa fa-briefcase" aria-hidden="true"></i></a><br>
+                    </li>
+                    <li class="control">
+                        <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a><br>
+                    </li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+
+        <div class="header-text">
+            <h3><span class="text">"</span> Where <span class="text">creativity</span> meets <span class="text">code
+                </span>"</h3>
+            <br>
+
+            <h1><span id="firstLine">Hi, I am</span>
+                <span class="text">Pramesh</span></h1>
+            <p>Software Engineering Student</p>
+        </div>
+    </div>
+
+    <!-- -----------------------------------------------------About-------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutMe.jpg" alt="my picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="aboutMeTitle">About me</h1>
+                    <p>As a driven software engineering student, I bring a combination of technical knowledge and
+                        creative problem-solving skills to the table. Posses skills in Java, HTML, CSS, JavaScript and
+                        C#. My work experience at Lidl as a Logistic Assistant has honed my ability to work
+                        efficiently in fast-paced environments and has taught me the importance of clear communication
+                        and collaboration. I am eager to continue my growth as a software engineer and am
+                        excited to
+                        bring my skills to your next project.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('interest')">Interest</p>
+                        <p class="tab-links" onclick="openTab('language')">Language</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Bacherlor of Engineering in
+                                    Software Technology,</span> <br>(pursuing)VIA
+                                University College
+                            </li>
+                            <li><span>Master of Science in International Business,</span><br>(2014)London South
+                                Bank
+                                University <br></li>
+                            <li><span> Top-up Bacherlor(Hons.)in International Business,</span> <br>(2012)Coventry
+                                University
+                            </li>
+                            <li><span>AP Degree in Marketing Management,</span> <br>(2011)International Business
+                                Academy<br>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><img src="images/html5.png" alt="html"> </li>
+                            <li><img src="images/css-3.png" alt="html"></li>
+                            <li><img src="images/js.png" alt="html"></li>
+                            <li><img src="images/java.png" alt="html"></li>
+                            <li><img src="images/c-sharp.png" alt="html"></li>
+                            <li><img src="images/git.png" alt="html"></li>
+                            <li><img src="images/postgre.png" alt="html"></li>
+
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Logistic Assistant</span> <br> (Dec, 2021 - July, 2022) Lidl K/S
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="interest">
+                        <p>As a software engineering student, I understand the importance of staying current and
+                            knowledgeable in the ever-evolving field of technology. This is why I actively seek out
+                            opportunities to practice my coding skills and learn about new technologies, both in and
+                            outside of the classroom. <span id="learnMore">Read more..</span> </p><br><br>
+
+                        <p id="restText"> In my free time, I enjoy creating small projects. These projects not only
+                            help me
+                            develop my
+                            coding skills,but they also allow me to explore my interests and gain a deeper
+                            understanding
+                            of the industry. <br><br>
+
+                            I am constantly reading up on the latest advancements in these areas, scouring the web
+                            for
+                            articles, tutorials, and forums that can help me expand my knowledge. I believe that
+                            having
+                            a diverse range of interests and a willingness to continuously learn and grow is
+                            essential
+                            for success in the technology field. </p>
+                    </div>
+
+                    <div class="tab-contents" id="language">
+                        <ul>
+                            <li><span>English</span> - Fluent</li>
+                            <li><span>Danish</span> - Intermediate</li>
+                            <li><span>Nepali</span> - Native</li>
+                            <li><span>Indian</span> - Fluent</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------------------------Portfolio-------------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/employer_jobseeker (Custom).png" alt="employer_jobseeker">
+                    <div class="layer">
+                        <h3>Communication System</h3>
+                        <p>Client-server system using Java, JavaFx, RMI, postgreSql</p>
+                        <a href="https://github.com/pramesh-shrestha/SEP2" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/hotel website (Custom).png" alt="employer_jobseeker">
+                    <div class="layer">
+                        <h3>Hotel Website</h3>
+                        <p>Developed webiste using HTML5, CSS3, Bootstrap5, and JS </p>
+                        <a href="https://github.com/pramesh-shrestha/Overlook-Website" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/overlook hotel (Custom).png" alt="employer_jobseeker">
+                    <div class="layer">
+                        <h3>Hotel Booking System</h3>
+                        <p>Single-user system using Java and JavaFx</p>
+                        <a href="https://github.com/pramesh-shrestha/Overlook" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/registration form (Custom).png" alt="employer_jobseeker">
+                    <div class="layer">
+                        <h3>Registration Form</h3>
+                        <p>Basic form using HTML5 and CSS3</p>
+                        <a href="https://github.com/pramesh-shrestha/Registration-form" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------Contact----------------------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> prmsstha22@gmail.com</p>
+                    <p><i class="fas fa-phone-square"></i> +45 71 67 10 66</p>
+                    <div class="contact-icons">
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/pramesh-shrestha?tab=repositories" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <button class="CV-btn"><a href="images/SystemModels.pdf" download>Download CV</a></button>
+                </div>
+
+                <div class=" right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Pramesh Shrestha</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
