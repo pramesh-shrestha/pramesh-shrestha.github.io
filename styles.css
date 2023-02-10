@@ -393,25 +393,25 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url("images/mobilemainpage.png");
+    background-image: url("images/mobile.png");
   }
 
   .header-text {
-    margin-top: 120%;
-    font-size: 15px;
-    margin-left: 20%;
+    margin-top: 115%;
+    font-size: 19px;
+    margin-left: 4%;
   }
 
   .header-text h1 #firstLine {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .header-text h1 .text {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .header-text p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   nav .fas {
@@ -465,8 +465,12 @@ nav .fas {
     display: block;
   }
 
+  .tab-links {
+    font-size: 14px;
+  }
+
   .tab-links.active-link::after {
-    width: 10%;
+    width: 0%;
   }
 
   .left,
