@@ -481,12 +481,16 @@ nav .fas {
   .copyright {
     font-size: 14px;
   }
+
+  .container .row .left p {
+    color: #fff;
+  }
 }
 
 /* --------------------------CSS for medium screen-------------------------------- */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
   #header {
-    background-image: url("images/mainpagephone.png");
+    background-image: url("images/medium.png");
   }
 
   .header-text {
@@ -496,5 +500,12 @@ nav .fas {
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
+  }
+}
+
+/* --------------------------CSS for medium screen-------------------------------- */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #header {
+    background-image: url("images/mainPagePicture.png");
   }
 }
